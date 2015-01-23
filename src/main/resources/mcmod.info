@@ -1,0 +1,17 @@
+    [
+    {
+      "modid": "${modid}",
+      "name": "${name}",
+      "description": "Kommt noch",
+      "version": "${version}",
+      "mcversion": "${mcversion}",
+      "url": "",
+      "updateUrl": "",
+      "authorList": ["Bonbonkocher"],
+      "credits": "The Forge and FML guys, for making this example",
+      "logoFile": "",
+      "screenshots": [],
+      "requiredMods": [""],
+      "dependencies": [""]
+    }
+    ]
