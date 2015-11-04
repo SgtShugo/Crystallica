@@ -1,0 +1,12 @@
+﻿staub0.png  = Staubeisen
+staub1.png  = Staubgold
+staub2.png  = Staubobsidian
+staub3.png  = Staubrubin
+staub4.png  = Staubsaphir
+staub5.png  = Staubaquamarin
+staub6.png  = Staubberyll
+staub7.png  = Staubtopas
+staub8.png  = Staubpyrit
+staub9.png  = Staubmalachit
+staub10.png = Staubamethyst
+staub11.png = Staubkohle

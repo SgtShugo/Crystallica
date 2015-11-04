@@ -1,0 +1,13 @@
+tile.testBlock.name=Test Block
+itemGroup.crystallica=Crystallica
+item.Eisenstange.name=Iron Rod
+item.Kohlenstaub.name=Coal Dust
+item.Topas.name=Topaz
+item.Rubin.name=Ruby
+item.Saphir.name=Saphir
+tile.Topas.name=Topaz Ore
+tile.Rubin.name=Ruby Ore
+tile.Saphir.name=Saphir Ore
+tile.Blockholzkohle.name=Charcoal Block
+tile.Brecher.name=Breaker
+info.monItemInfo.material=Material1

@@ -1,0 +1,9 @@
+﻿Kristall0.png  = Kristallobsidian
+Kristall1.png  = Kristallrubin
+Kristall2.png  = Kristallsaphir
+Kristall3.png  = Kristallaquamarin
+Kristall4.png  = Kristallberyll
+Kristall5.png  = Kristalltopas
+Kristall6.png  = Kristallpyrit
+Kristall7.png  = Kristallmalachit
+Kristall8.png  = Kristallamethyst
