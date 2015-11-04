@@ -7,8 +7,10 @@
 /gradle
 .classpath
 .project
+build.bat
 build.gradle
+eclipse.bat
+forge-1.8-11.14.3.1450-changelog.txt
 gradlew
 gradlew.bat
-gradlew1.bat
-gradlew2.bat
+setupDecompWorkspace.bat
