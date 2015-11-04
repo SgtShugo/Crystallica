@@ -1,5 +1,8 @@
 package de.bonbonkocher.crystallica.proxies;
 
-public class CrystallicaCommonProxy {
+import de.bonbonkocher.crystallica.Crystallica;
+
+public class CrystallicaCommonProxy extends Crystallica
+{
 
 }
