@@ -54,6 +54,12 @@ public class Crystallica
 	public static CrystallicaDefaultBlock rubin;
 	public static CrystallicaDefaultBlock saphir;
 	public static CrystallicaDefaultBlock topas;
+	public static CrystallicaDefaultBlock amethyst;
+	public static CrystallicaDefaultBlock aquamarin;
+	public static CrystallicaDefaultBlock beryll;
+	public static CrystallicaDefaultBlock malachit;
+	public static CrystallicaDefaultBlock mythril;
+	public static CrystallicaDefaultBlock pyrit;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -63,8 +69,8 @@ public class Crystallica
 		config.load();
 		
         //Horse_Armor = config.get("Shaped", "Horse_Armor", true).getBoolean(true);
-		
 		config.save();
+		
 		new loadertap();
 	}
 
