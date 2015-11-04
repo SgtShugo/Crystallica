@@ -11,20 +11,19 @@ import net.minecraft.item.Item;
 
 public class CrystallicaDefaultBlock extends Block
 {
-	public CrystallicaDefaultBlock(Material material, String unlocalizedName, float hardness, float resistance, float lightLevel, String tool, int havestLevel)
+	public CrystallicaDefaultBlock(Material material, String unlocalizedName, float hardness, float resistance, float lightLevel, String tool, int harvestLevel)
 	{
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHardness(hardness);
 		this.setResistance(resistance);
 		this.setLightLevel(lightLevel);
-		this.setHarvestLevel(tool, havestLevel);
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setHarvestLevel(tool, harvestLevel);
+		this.setCreativeTab(Crystallica.crystallicataps);
 	}
 	
 	public void registerTexture()
 	{
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(Item.getItemFromBlock(this), 0, new ModelResourceLocation(Crystallica.MODID + ":" + this.getUnlocalizedName().substring(5)));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(this), 0, new ModelResourceLocation(Crystallica.MODID + ":" + this.getUnlocalizedName().substring(5)));
 	}
 }

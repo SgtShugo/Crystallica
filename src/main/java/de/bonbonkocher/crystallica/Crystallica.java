@@ -1,6 +1,7 @@
 package de.bonbonkocher.crystallica;
 
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -44,6 +45,10 @@ public class Crystallica
 	//#############################################
 
 	/**
+	 * Taps erstellen
+	 */
+	public static CreativeTabs crystallicataps;
+	/**
 	 * Blocks erstellen
 	 */
 	public static CrystallicaDefaultBlock rubin;
@@ -60,6 +65,7 @@ public class Crystallica
         //Horse_Armor = config.get("Shaped", "Horse_Armor", true).getBoolean(true);
 		
 		config.save();
+		new loadertap();
 	}
 
 	@EventHandler
