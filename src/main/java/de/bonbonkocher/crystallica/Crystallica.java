@@ -14,6 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import com.sun.security.auth.login.ConfigFile;
 
 import de.bonbonkocher.crystallica.blocks.CrystallicaDefaultBlock;
+import de.bonbonkocher.crystallica.items.CrystallicaDefaultItems;
 import de.bonbonkocher.crystallica.proxies.CrystallicaCommonProxy;
 
 
@@ -51,15 +52,29 @@ public class Crystallica
 	/**
 	 * Blocks erstellen
 	 */
-	public static CrystallicaDefaultBlock rubin;
-	public static CrystallicaDefaultBlock saphir;
-	public static CrystallicaDefaultBlock topas;
-	public static CrystallicaDefaultBlock amethyst;
-	public static CrystallicaDefaultBlock aquamarin;
-	public static CrystallicaDefaultBlock beryll;
-	public static CrystallicaDefaultBlock malachit;
-	public static CrystallicaDefaultBlock mythril;
-	public static CrystallicaDefaultBlock pyrit;
+	//Erze
+	public static CrystallicaDefaultBlock BlockErzAmethyst;
+	public static CrystallicaDefaultBlock BlockErzAquamarin;
+	public static CrystallicaDefaultBlock BlockErzBeryll;
+	public static CrystallicaDefaultBlock BlockErzMalachit;
+	public static CrystallicaDefaultBlock BlockErzMythril;
+	public static CrystallicaDefaultBlock BlockErzPyrit;
+	public static CrystallicaDefaultBlock BlockErzRubin;
+	public static CrystallicaDefaultBlock BlockErzSaphir;
+	public static CrystallicaDefaultBlock BlockErzTopas;
+	/**
+	 * items erstellen
+	 */
+	//Kristalle
+	public static CrystallicaDefaultItems ItemKristalleRubin;
+	public static CrystallicaDefaultItems ItemKristalleSaphir;
+	public static CrystallicaDefaultItems ItemKristalleTopas;
+	public static CrystallicaDefaultItems ItemKristalleAmethyst;
+	public static CrystallicaDefaultItems ItemKristalleAquamarin;
+	public static CrystallicaDefaultItems ItemKristalleBeryll;
+	public static CrystallicaDefaultItems ItemKristalleMalachit;
+	public static CrystallicaDefaultItems ItemKristalleMythril;
+	public static CrystallicaDefaultItems ItemKristallePyrit;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)

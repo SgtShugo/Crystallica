@@ -12,7 +12,7 @@ public class loadertap
 			@Override
 			public Item getTabIconItem() 
 			{
-				return Item.getItemFromBlock(Crystallica.rubin);
+				return Item.getItemFromBlock(Crystallica.BlockErzRubin);
 			}
 		};
 	}
