@@ -11,6 +11,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -21,15 +22,10 @@ import net.minecraft.world.IBlockAccess;
 
 
 public class CrystallicaDefaultBlock extends Block
-{	
-	public Item drop;
-	public int meta;
-	public int least_quantity;
-	public int most_quantity;
+{
+	private int dropzahl;
 	
-	public CrystallicaDefaultBlock(Material material, String unlocalizedName, float hardness, float resistance, 
-			float lightLevel, String tool, int harvestLevel, Item itemdrop, int dropzahl, 
-			int least_quantity, int most_quantity, IBlockState state, Random rand, int fortune) 
+	public CrystallicaDefaultBlock(Material material, String unlocalizedName, float hardness, float resistance, float lightLevel, String tool, int harvestLevel, int dropzahl) 
 	{
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
@@ -38,11 +34,7 @@ public class CrystallicaDefaultBlock extends Block
 		this.setLightLevel(lightLevel);
 		this.setHarvestLevel(tool, harvestLevel);
 		this.setCreativeTab(Crystallica.crystallicataps);
-		this.drop = itemdrop;
-		this.meta = dropzahl;
-		this.least_quantity = least_quantity;
-		this.most_quantity = most_quantity;
-		this.getItemDropped(state, rand, fortune);
+		this.dropzahl = dropzahl;
 	}
 
 	//Texture
@@ -50,14 +42,9 @@ public class CrystallicaDefaultBlock extends Block
 	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(this), 0, new ModelResourceLocation(Crystallica.MODID + ":" + this.getUnlocalizedName().substring(5)));
 	}
-
+	
     public int quantityDropped(Random random)
     {
-        return meta;
+        return dropzahl;
     }
-    
-    /*public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
-        return drop;
-    }*/
 }
