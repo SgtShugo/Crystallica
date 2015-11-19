@@ -1,5 +1,6 @@
 package de.bonbonkocher.crystallica;
 
+import de.bonbonkocher.crystallica.blocks.RegisterBlockList;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -12,7 +13,7 @@ public class loadertap
 			@Override
 			public Item getTabIconItem() 
 			{
-				return Item.getItemFromBlock(Crystallica.BlockErzRubin);
+				return Item.getItemFromBlock(RegisterBlockList.BlockErzRubin);
 			}
 		};
 	}

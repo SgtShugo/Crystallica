@@ -1,6 +1,6 @@
 package de.bonbonkocher.crystallica;
 
-
+import de.bonbonkocher.crystallica.proxies.CrystallicaCommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
@@ -10,14 +10,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
-import com.sun.security.auth.login.ConfigFile;
-
-import de.bonbonkocher.crystallica.blocks.CrystallicaDefaultBlock;
-import de.bonbonkocher.crystallica.items.CrystallicaDefaultItems;
-import de.bonbonkocher.crystallica.proxies.CrystallicaCommonProxy;
-
-
 
 @Mod(modid=Crystallica.MODID, name=Crystallica.NAME, version=Crystallica.VERSION)
 
@@ -33,7 +25,7 @@ public class Crystallica
 	@SidedProxy
 	(
 			clientSide="de.bonbonkocher.crystallica.proxies.CrystallicaClientProxy", 
-			serverSide="de.bonbonkocher.crystallica.proxies.CrystallicaCommonProxy"
+			serverSide="de.bonbonkocher.crystallica.proxies.CrystallicaServerProxy"
 	)
 	public static CrystallicaCommonProxy proxy;
 
@@ -45,36 +37,8 @@ public class Crystallica
 	//public static boolean Horse_Armor = true;
 	//#############################################
 
-	/**
-	 * Taps erstellen
-	 */
+	//Tabs
 	public static CreativeTabs crystallicataps;
-	/**
-	 * Blocks erstellen
-	 */
-	//Erze
-	public static CrystallicaDefaultBlock BlockErzAmethyst;
-	public static CrystallicaDefaultBlock BlockErzAquamarin;
-	public static CrystallicaDefaultBlock BlockErzBeryll;
-	public static CrystallicaDefaultBlock BlockErzMalachit;
-	public static CrystallicaDefaultBlock BlockErzMythril;
-	public static CrystallicaDefaultBlock BlockErzPyrit;
-	public static CrystallicaDefaultBlock BlockErzRubin;
-	public static CrystallicaDefaultBlock BlockErzSaphir;
-	public static CrystallicaDefaultBlock BlockErzTopas;
-	/**
-	 * items erstellen
-	 */
-	//Kristalle
-	public static CrystallicaDefaultItems ItemKristalleRubin;
-	public static CrystallicaDefaultItems ItemKristalleSaphir;
-	public static CrystallicaDefaultItems ItemKristalleTopas;
-	public static CrystallicaDefaultItems ItemKristalleAmethyst;
-	public static CrystallicaDefaultItems ItemKristalleAquamarin;
-	public static CrystallicaDefaultItems ItemKristalleBeryll;
-	public static CrystallicaDefaultItems ItemKristalleMalachit;
-	public static CrystallicaDefaultItems ItemKristalleMythril;
-	public static CrystallicaDefaultItems ItemKristallePyrit;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -96,7 +60,7 @@ public class Crystallica
 	}
 
 	@EventHandler
-	public static void postInit(FMLPostInitializationEvent event)
+	public void postInit(FMLPostInitializationEvent event)
 	{
 		
 	}

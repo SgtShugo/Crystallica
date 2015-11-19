@@ -5,25 +5,36 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class RegisterItemList
 {
+	//Kristalle
+	public static CrystallicaDefaultItems ItemKristalleRubin;
+	public static CrystallicaDefaultItems ItemKristalleSaphir;
+	public static CrystallicaDefaultItems ItemKristalleTopas;
+	public static CrystallicaDefaultItems ItemKristalleAmethyst;
+	public static CrystallicaDefaultItems ItemKristalleAquamarin;
+	public static CrystallicaDefaultItems ItemKristalleBeryll;
+	public static CrystallicaDefaultItems ItemKristalleMalachit;
+	public static CrystallicaDefaultItems ItemKristalleMythril;
+	public static CrystallicaDefaultItems ItemKristallePyrit;
+	
 	public RegisterItemList()
 	{
-		GameRegistry.registerItem(Crystallica.ItemKristalleRubin, Crystallica.ItemKristalleRubin.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleRubin.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleSaphir, Crystallica.ItemKristalleSaphir.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleSaphir.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleTopas, Crystallica.ItemKristalleTopas.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleTopas.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleAmethyst, Crystallica.ItemKristalleAmethyst.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleAmethyst.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleAquamarin, Crystallica.ItemKristalleAquamarin.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleAquamarin.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleBeryll, Crystallica.ItemKristalleBeryll.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleBeryll.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleMalachit, Crystallica.ItemKristalleMalachit.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleMalachit.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristalleMythril, Crystallica.ItemKristalleMythril.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristalleMythril.registerTextures();
-		GameRegistry.registerItem(Crystallica.ItemKristallePyrit, Crystallica.ItemKristallePyrit.getUnlocalizedName().substring(5));
-		Crystallica.ItemKristallePyrit.registerTextures();
+		GameRegistry.registerItem(ItemKristalleRubin, ItemKristalleRubin.getUnlocalizedName().substring(5));
+		ItemKristalleRubin.registerTextures();
+		GameRegistry.registerItem(ItemKristalleSaphir, ItemKristalleSaphir.getUnlocalizedName().substring(5));
+		ItemKristalleSaphir.registerTextures();
+		GameRegistry.registerItem(ItemKristalleTopas, ItemKristalleTopas.getUnlocalizedName().substring(5));
+		ItemKristalleTopas.registerTextures();
+		GameRegistry.registerItem(ItemKristalleAmethyst, ItemKristalleAmethyst.getUnlocalizedName().substring(5));
+		ItemKristalleAmethyst.registerTextures();
+		GameRegistry.registerItem(ItemKristalleAquamarin, ItemKristalleAquamarin.getUnlocalizedName().substring(5));
+		ItemKristalleAquamarin.registerTextures();
+		GameRegistry.registerItem(ItemKristalleBeryll, ItemKristalleBeryll.getUnlocalizedName().substring(5));
+		ItemKristalleBeryll.registerTextures();
+		GameRegistry.registerItem(ItemKristalleMalachit, ItemKristalleMalachit.getUnlocalizedName().substring(5));
+		ItemKristalleMalachit.registerTextures();
+		GameRegistry.registerItem(ItemKristalleMythril, ItemKristalleMythril.getUnlocalizedName().substring(5));
+		ItemKristalleMythril.registerTextures();
+		GameRegistry.registerItem(ItemKristallePyrit, ItemKristallePyrit.getUnlocalizedName().substring(5));
+		ItemKristallePyrit.registerTextures();
 	}
 }

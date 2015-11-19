@@ -5,7 +5,7 @@ public class CrystallicaWorldLoader
 	public CrystallicaWorldLoader()
 	{
 		//Welten + Generator
-		new RegisterWorldList();
+		//new RegisterWorldList();
 
 	}
 }

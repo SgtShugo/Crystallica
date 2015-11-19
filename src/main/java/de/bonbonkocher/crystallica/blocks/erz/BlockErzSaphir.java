@@ -4,6 +4,7 @@ import java.util.Random;
 
 import de.bonbonkocher.crystallica.Crystallica;
 import de.bonbonkocher.crystallica.blocks.CrystallicaDefaultBlock;
+import de.bonbonkocher.crystallica.items.RegisterItemList;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
@@ -18,7 +19,7 @@ public class BlockErzSaphir extends CrystallicaDefaultBlock {
 
 	@Override
 	public Item getItemDropped(IBlockState blockstate, Random random, int fortune) {
-		return Crystallica.ItemKristalleSaphir;
+		return RegisterItemList.ItemKristalleSaphir;
 	}
 
 }
