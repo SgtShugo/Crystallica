@@ -47,27 +47,51 @@ public class CrystallicaGenerator implements IWorldGenerator
 	
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
 	{		
-			switch(world.provider.getDimensionId())
-			{
-				//NetherWorld
-				case -1:
-					this.addOreSpawn(this.Amethyst, world, random, chunkX, chunkZ, 5, 1, 200);
-					break;
-				//OverWorld
-				case 0:
-					this.addOreSpawn(this.Aquamarin, world, random, chunkX, chunkZ, 8, 45, 50);
-					this.addOreSpawn(this.Beryll, world, random, chunkX, chunkZ, 8, 40, 45);
-					this.addOreSpawn(this.Malachit, world, random, chunkX, chunkZ, 8, 35, 40);
-					this.addOreSpawn(this.Mythril, world, random, chunkX, chunkZ, 8, 30, 35);
-					this.addOreSpawn(this.Pyrit, world, random, chunkX, chunkZ, 8, 25, 30);
+		switch(world.provider.getDimensionId())
+		{
+			//NetherWorld
+			case -1:
+				this.addOreSpawn(this.Amethyst, world, random, chunkX, chunkZ, 5, 1, 200);
+				break;
+				
+			//OverWorld
+			case 0:
+				this.addOreSpawn(this.Aquamarin, world, random, chunkX, chunkZ, 8, 45, 50);
+				this.addOreSpawn(this.Beryll, world, random, chunkX, chunkZ, 8, 40, 45);
+				this.addOreSpawn(this.Malachit, world, random, chunkX, chunkZ, 8, 35, 40);
+				this.addOreSpawn(this.Mythril, world, random, chunkX, chunkZ, 8, 30, 35);
+				this.addOreSpawn(this.Pyrit, world, random, chunkX, chunkZ, 8, 25, 30);
+				//world.getHeightValue(RandPosX, RandPosZ);
+				//if(world.getBiomeGenForCoords(new BlockPos(chunkX, y,chunkZ)) instanceof BiomeGenDesert)
+				//{
+				this.addOreBiom(world, random, chunkX, chunkZ, chunkY, BiomeGenDesert)
+				{
 					this.addOreSpawn(this.Rubin, world, random, chunkX, chunkZ, 8, 20, 25);
-					this.addOreSpawn(this.Saphir, world, random, chunkX, chunkZ, 8, 15, 20);
-					this.addOreSpawn(this.Topas, world, random, chunkX, chunkZ, 8, 10, 15);
-					break;
-				//EndWorld
-				case 1:
-					break;
+				}
+				this.addOreSpawn(this.Saphir, world, random, chunkX, chunkZ, 8, 15, 20);
+				this.addOreSpawn(this.Topas, world, random, chunkX, chunkZ, 8, 10, 15);
+				break;
+				
+			//EndWorld
+			case 1:
+				break;
+		}
+	}
+	
+	public static void addOreBiom(World world, Random random, int chunkX, int chunkZ, int chunkY, String biomgen)
+	{
+		if(biomgen == i)
+		{
+			if(biomgen.toString() == world.set)
+			{
+				return;
 			}
+			else
+			if(world.getBiomeGenForCoords(new BlockPos(chunkX, chunkY,chunkZ)) instanceof BiomeGenHell)
+			{
+				
+			}
+		}
 	}
 
 	public static void addOreSpawn(WorldGenerator generator, World world, Random random, int chunkX, int chunkZ, int chancesToSpawn, int minHeight, int maxHeight)

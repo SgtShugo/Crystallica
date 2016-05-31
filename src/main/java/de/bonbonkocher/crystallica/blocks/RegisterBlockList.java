@@ -1,12 +1,13 @@
 package de.bonbonkocher.crystallica.blocks;
 
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import de.bonbonkocher.crystallica.Crystallica;
 
 public class RegisterBlockList
 {
 	//Erze
-	public static CrystallicaDefaultBlock BlockErzAmethyst;
+	public CrystallicaDefaultBlock BlockErzAmethyst;
 	public static CrystallicaDefaultBlock BlockErzAquamarin;
 	public static CrystallicaDefaultBlock BlockErzBeryll;
 	public static CrystallicaDefaultBlock BlockErzMalachit;
@@ -15,6 +16,8 @@ public class RegisterBlockList
 	public static CrystallicaDefaultBlock BlockErzRubin;
 	public static CrystallicaDefaultBlock BlockErzSaphir;
 	public static CrystallicaDefaultBlock BlockErzTopas;
+	@Instance
+	public static RegisterBlockList instance = new RegisterBlockList();
 	
 	public RegisterBlockList()
 	{

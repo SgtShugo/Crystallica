@@ -19,7 +19,7 @@ public class ConfigBlockList
 	public ConfigBlockList()
 	{
 		//Material, unlocalizedName, hardness, resistance, lightLevel, tool, havestLevel[0=Holz,Gold,1=Stone,2=Eisen,3=Diamant]
-		RegisterBlockList.BlockErzAmethyst = new BlockErzAmethyst(Material.iron, "BlockErzAmethyst", 1.0F, 1.0F, 0.1F, "pickaxe", 2, 1);
+		RegisterBlockList.instance.BlockErzAmethyst = new BlockErzAmethyst(Material.iron, "BlockErzAmethyst", 1.0F, 1.0F, 0.1F, "pickaxe", 2, 1);
 		RegisterBlockList.BlockErzAquamarin = new BlockErzAquamarin(Material.iron, "BlockErzAquamarin", 1.0F, 1.0F, 0.3F, "pickaxe", 2, 1);
 		RegisterBlockList.BlockErzBeryll = new BlockErzBeryll(Material.iron, "BlockErzBeryll", 1.0F, 1.0F, 0.8F, "pickaxe", 2, 1);
 		RegisterBlockList.BlockErzMalachit = new BlockErzMalachit(Material.iron, "BlockErzMalachit", 1.0F, 1.0F, 0.25F, "pickaxe", 2, 1);
